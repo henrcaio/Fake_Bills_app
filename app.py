@@ -29,10 +29,10 @@ def carregar_modelo():
 def cedula():
     st.subheader("Insira as características da cédula:")
     feature1 = st.number_input(
-        "Comprimento da cédula (0-200):", min_value=0, max_value=200
+        "Comprimento da cédula (0-200mm):", min_value=0, max_value=200
     )
     feature2 = st.number_input(
-        "Margem inferior da cédula (0-20):", min_value=0, max_value=20
+        "Margem inferior da cédula (0-20mm):", min_value=0, max_value=20
     )
     return feature1, feature2
 
