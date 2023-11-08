@@ -22,7 +22,10 @@ st.write(
 
 # Carregando o modelo treinado
 def carregar_modelo():
-    return joblib.load("modelo_treinado.pkl")
+    modelo_file = st.file_uploader("modelo_treinado.pkl", type=["pkl"])
+    if modelo_file is not None:
+        modelo = joblib.load(modelo_file)
+        return modelo
 
 
 # Recebendo as características da cédula
