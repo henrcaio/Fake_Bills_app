@@ -69,7 +69,7 @@ if __name__ == "__main__":
 
     feature1, feature2 = cedula()
 
-    # Botão para realizar a previsão
+    # Botão para realizar a predição
     if st.button("Prever"):
         predicao = predicao(modelo, feature1, feature2)
         resultado(predicao)
